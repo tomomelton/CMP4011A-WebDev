@@ -35,5 +35,5 @@ nav ul li a {
 
 /* Highlights under currently selected page */
 .active {
-    border-bottom: 3px solid #228b22;
+    border-bottom: 6px solid #003632;
 }
