@@ -11,6 +11,7 @@ header {
     background-color: #e0e0e0;
     text-align: center;
     padding: 15px 0;
+    margin: 10px 0;
 }
 
 nav ul {
@@ -21,7 +22,7 @@ nav ul {
 nav ul li {
     display: inline;
     text-align: center;
-    margin: auto 3%;
+    margin: 0 3%;
 }
 
 nav ul li a {
@@ -38,17 +39,18 @@ nav ul li a {
 }
 
 /* Image formatting */
-.top {
+div {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 15px 0;
+    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .logo {
     height: auto;
     width: 90px;
-    padding-left: 3%;
+    margin-left: 3%;
 }
 
 .title {
@@ -56,6 +58,26 @@ nav ul li a {
     left: 50%;
     transform: translateX(-50%);
 }
-
 /* ------------------------------------------------------------ */
 
+/* -------------------- Footer Formatting -------------------- */
+footer {
+    padding: 5px 0;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #006096;
+    color: #ffff;
+}
+
+footer p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer div img {
+    background-color: #ffff;
+    padding: 8px;
+    border-radius: 6px;
+}
+/* ------------------------------------------------------------ */
