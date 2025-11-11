@@ -3,7 +3,7 @@
 if (document.querySelector("header"))
 {
     let headerElement = document.querySelector("header");
-    let jsonFile = "Header.json";
+    let jsonFile = "data/Header.json";
 
     document.addEventListener("DOMContentLoaded", () =>
     {
@@ -44,7 +44,7 @@ if (document.querySelector("header"))
 if (document.querySelector("footer"))
 {
     let footerElement = document.querySelector("footer");
-    let jsonFile = "Footer.json"
+    let jsonFile = "data/Footer.json"
 
     document.addEventListener("DOMContentLoaded", () =>
     {
