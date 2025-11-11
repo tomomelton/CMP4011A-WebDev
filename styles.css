@@ -10,7 +10,7 @@ header {
     color: black;
     background-color: #e0e0e0;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     margin: 10px 0;
 }
 
@@ -63,7 +63,7 @@ div {
 /* -------------------- Footer Formatting -------------------- */
 footer {
     padding: 5px 0;
-    margin: 10px 0;
+    margin: 15px 0;
     text-align: center;
     background-color: #006096;
     color: #ffff;
@@ -81,3 +81,12 @@ footer div img {
     border-radius: 6px;
 }
 /* ------------------------------------------------------------ */
+
+
+main {
+    margin: auto 5%;
+    padding: 16px;
+    border: 2px solid #00b8aa;
+    border-radius: 20px;
+    overflow: auto;
+}
