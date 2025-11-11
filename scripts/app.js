@@ -51,3 +51,43 @@ if (document.querySelector("header"))
     }
     )
 }
+
+// ******************* Load Footer *******************
+if (document.querySelector("footer"))
+{
+    let footerElement = document.querySelector("footer");
+    let jsonFile = "Footer.json"
+
+    document.addEventListener("DOMContentLoaded", () =>
+    {
+        fetch(jsonFile)
+        .then(response => response.json())
+        .then(responseData =>
+        {
+            for (footerData of responseData)
+            {
+                // Create Div element to hold image and footer
+                let divElement = document.createElement("div");
+                footerElement.appendChild(divElement);
+
+                // Create and add logo
+                let imageElement = document.createElement("img");
+                imageElement.src = footerData.imageURL;
+                imageElement.alt = footerData.alt;
+                imageElement.setAttribute("class","logo");
+                divElement.appendChild(imageElement);
+
+                // Create and add footer text
+                let pElement = document.createElement("p");
+                pElement.textContent = footerData.footer;
+                divElement.appendChild(pElement);
+            }
+            
+        }
+        )
+    }
+    )
+
+    
+
+}
