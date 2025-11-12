@@ -1,5 +1,13 @@
 [
     {
-        
+        "heading": "Goal 7: Affordable and Clean Energy",
+        "imageURL": "images/energy 1.png",
+        "alt": "Energy Goals",
+        "description":
+        {
+            "goal": "Goal 7:",
+            "p1": "To ensure access to affordable, reliable, sustainable, and moders energy for all",
+            "p2": "The goal is to increase global electricity access from 84% in 2010, to 92% by 2023" 
+        }
     }
 ]
