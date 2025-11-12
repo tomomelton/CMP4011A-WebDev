@@ -22,15 +22,18 @@
     padding: 20px 20px;
     background-color: #FBC20B;
     border-radius: 15px;
-    font-size: x-large;
+    font-size: medium;
 }
 
 
-@media only screen and (max-width:786px)
+@media only screen and (max-width:1400px)
 {
     #sec1
     {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
     }
 
     #sec1 article
