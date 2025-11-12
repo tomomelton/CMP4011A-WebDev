@@ -1,34 +1,48 @@
 #sec1 
 {
     text-align: center;
-    margin: 15px 15px;
+    margin: 15px;
     display: flex;
+    justify-content: center;
 }
 
 #sec1 img 
 {
     height: auto;
-    width: 800px;
+    width: 70%;
     display: inline;
     margin: 0 15px;
-    border-radius: 15px
+    border-radius: 15px;
 }
 
 #sec1 p {
     display: inline;
     margin: 0 15px;
-    padding: 10px 5px;
+    padding: 20px 20px;
     background-color: #FBC20B;
     border-radius: 15px;
+    font-size: x-large;
 }
 
 
 @media only screen and (max-width:786px)
 {
+    #sec1
+    {
+        display: block;
+    }
+
+    #sec1 p
+    {
+        display: block;
+        margin: 20px;
+    }
+
     #sec1 img 
     {
         height: auto;
-        width: 600px;
-        display: inline;
+        width: 500px;
+        display: block;
+        margin: 20px;
     }
 }
