@@ -1,0 +1,52 @@
+#sec1 
+{
+    text-align: center;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#sec1 img 
+{
+    height: auto;
+    width: 70%;
+    display: inline;
+    margin: 0 15px;
+    border-radius: 15px;
+}
+
+#sec1 article 
+{
+    display: inline;
+    margin: 0 15px;
+    padding: 20px 20px;
+    background-color: #FBC20B;
+    border-radius: 15px;
+    font-size: medium;
+}
+
+
+@media only screen and (max-width:1400px)
+{
+    #sec1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+
+    #sec1 article
+    {
+        display: block;
+        margin: 20px;
+    }
+
+    #sec1 img 
+    {
+        height: auto;
+        width: 500px;
+        display: block;
+        margin: 20px;
+    }
+}
