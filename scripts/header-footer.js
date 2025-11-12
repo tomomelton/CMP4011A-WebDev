@@ -32,8 +32,6 @@ if (document.querySelector("header"))
                 h1Element.setAttribute("class", "title");
                 divElement.appendChild(h1Element);
             }
-             
-            
         }
         )
     }
@@ -69,8 +67,7 @@ if (document.querySelector("footer"))
                 let pElement = document.createElement("p");
                 pElement.textContent = footerData.footer;
                 divElement.appendChild(pElement);
-            }
-            
+            }  
         }
         )
     }
