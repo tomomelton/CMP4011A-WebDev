@@ -5,6 +5,7 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="news_styles.css">
     <script src="scripts/app.js" defer></script>
     <script src="scripts/header-footer.js" defer></script>
 </head>
@@ -19,8 +20,43 @@
         </ul></nav>
     </header>
 
-    <main>
-        
+    <main class="newsmain">
+        <h1>Newsletter Sign Up</h1>
+            <section>
+                <form id="myform" method="post" action="#">
+                    <fieldset>
+                        <img src="images/envelope.png" class ="imgEnvelope">
+
+                        <style >
+                            .imgEnvelope {
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 150px;
+                                height: auto;
+                            }
+                        </style>
+                            
+                        <label for="First-name">First Name *:</label>
+                        <input type="text" placeholder="Please enter your first name.." id="First-name" name="first-name" required>
+                        
+                        <label for="Last-name">Last Name *:</label>
+                        <input type="text" placeholder="Please enter your last name..." id="Last-name" name="Last" required>
+                     
+                        <label for="email"> Email *:</label>
+                        <input type="email" placeholder="Please enter your email address..." id="email" name="email" required>
+
+                        <label for="Comments">Comment :</label>
+                        <textarea id="message" placeholder="Please any comments..." name="message" ></textarea>
+
+                        <input id=submit type="submit" value="Submit">
+                        <p id="confirmMessage">* Required field</p>
+                    </fieldset>
+                </form>
+            </section>
+
+        <p>Subscribe to our newsletter to stay updated with the latest news and updates.</p>
+
     </main>
 
     <footer>
