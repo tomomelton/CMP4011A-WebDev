@@ -1,3 +1,4 @@
+/* -------------------- Section 1 --------------------*/
 #sec1 
 {
     text-align: center;
@@ -9,7 +10,7 @@
 #sec1 img 
 {
     height: auto;
-    width: 70%;
+    width: 800px;
     display: inline;
     margin: 0 15px;
     border-radius: 15px;
@@ -22,12 +23,40 @@
     padding: 20px 20px;
     background-color: #FBC20B;
     border-radius: 15px;
-    font-size: medium;
+    font-size: large;
+}
+/* -------------------------------------------------- */
+
+/* -------------------- Section 2 --------------------*/
+#sec2 {
+    text-align: center;
+    margin: 70px 30px 10px 30px;
+    padding: 20px 20px;
+    background-color: #FED472;
+    border-radius: 15px;
 }
 
+#sec2 div {
+    display: inline;
+    padding: 20px 0
+}
+
+#sec2 img{
+    height: auto;
+    width: 85%;
+    display: inline;
+    border-radius: 15px;
+}
+
+#sec2 p {
+    font-size: large;
+    margin: 30px 10%;
+}
+/* -------------------------------------------------- */
 
 @media only screen and (max-width:1400px)
 {
+/* -------------------- Section 1 --------------------*/
     #sec1
     {
         display: flex;
@@ -49,4 +78,9 @@
         display: block;
         margin: 20px;
     }
+/* -------------------------------------------------- */
+
+/* -------------------- Section 2 --------------------*/
+
+/* -------------------------------------------------- */
 }
