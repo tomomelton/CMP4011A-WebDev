@@ -94,3 +94,45 @@ main {
 h1 {
     text-align: center;
 }
+/* Dropdown menu in nav*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00b8aa;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 999; 
+}
+
+/* Display menu with hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content li a {
+    display: block;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* hover effect */
+.dropdown-content li a:hover {
+    background-color: #003632;
+}
+
+/* added hover effect to nav bar */
+nav li a:hover {
+    background-color: #003632;
+}
