@@ -8,6 +8,15 @@
             "goal": "Goal 7:",
             "p1": "To ensure access to affordable, reliable, sustainable, and moders energy for all",
             "p2": "In 2015, the UN General Assembly adopted the 2030 Agenda for Sustainable Development, which include a dedicated and stand-alone goal on energy, SDG 7, calling to 'ensure access to affordable, reliable, sustainable and modern energy for all'. Energy lies at the heart of both the 2030 Agenda for Sustainable Development and the Paris Agreement on Climate Change. Achieving SDG7 will open a new world of opportunities for millions of people through new economic opportunities and jobs, empowered women, children and youth, better education and health, more sustainable, equitable and inclusive communities, and greater protections from, and resilience to, climate change. The Global Roadmap for Accelerated SDG 7 Action resulting from the High-level Dialogue on Energy 2021 provides a guide for collective action on energy across sectors." 
+        },
+        "subheading": "Events",
+        "event":
+        {
+            "heading": "UN Celebrates the First World Clean Energy Day",
+            "date": "Fri 26 Jan 2024, 8.00 am",
+            "description": "On January 26, the United Nations marks its very first International Day of Clean Energy, representing a significant milestone in our collective commitment to a sustainable future. Adopted by the UN General Assembly, this day signifies a global celebration of clean energy and its pivotal role in achieving a just and inclusive energy transition. With a dedicated focus on advocating for clean and renewable energy sources, this occasion serves as a unifying platform for governments, businesses, and individuals across the globe to expedite the shift towards more sustainable and efficient energy systems. Let us unite in advancing awareness, innovation, and collaborative efforts to address climate change and ensure a cleaner, greener planet for generations to come",
+            "imageURL": "images/energy 2.jpg",
+            "alt": "Woman Cleaning Solar Pannel"
         }
     }
 ]

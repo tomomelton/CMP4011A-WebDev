@@ -1,7 +1,7 @@
 
-if (document.querySelector("main"))
+if (document.querySelector("#energyMain"))
 {
-    let mainElement = document.querySelector("main");
+    let mainElement = document.querySelector("#energyMain");
     let jsonFile = "data/Energy.json";
 
     document.addEventListener("DOMContentLoaded", () =>
