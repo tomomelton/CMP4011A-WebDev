@@ -22,7 +22,7 @@ app.get("/downloadEnergy", (req, res) =>
         }
         else
         {
-            console.log("Downloadeding")
+            console.log("Downloading")
         }
     });
 });
