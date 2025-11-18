@@ -11,12 +11,22 @@
 
 <body>
     <header>
-        <nav><ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="hub.html">Goals</a></li>
-            <li><a href="newsletter.html", class="active">Newsletter</a></li>
-            <li><a href="about.html">Team</a></li>
-        </ul></nav>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                    <a href="hub.html">Goals ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Energy</a></li>
+						<li><a href="#">Hunger</a></li>
+						<li><a href="pji.html">PJI</a></li>
+                    </ul>
+                </li>
+                <li><a href="newsletter.html", class="active">Newsletter</a></li>
+                <li><a href="about.html">Team</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
