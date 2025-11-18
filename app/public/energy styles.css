@@ -51,7 +51,8 @@
     }
 }
 /* -------------------- Section 2 --------------------*/
-#sec2 {
+#sec2 
+{
     text-align: center;
     margin: 70px 30px 10px 30px;
     padding: 20px 20px;
@@ -59,26 +60,30 @@
     border-radius: 15px;
 }
 
-#sec2 div {
+#sec2 div 
+{
     display: inline;
     padding: 20px 0
 }
 
-#sec2 img{
+#sec2 img
+{
     height: auto;
     width: 85%;
     display: inline;
     border-radius: 15px;
 }
 
-#sec2 p {
+#sec2 p 
+{
     font-size: large;
     margin: 30px 10%;
 }
 /* -------------------------------------------------- */
 
 /* -------------------- Section 3 --------------------*/
-#sec3 {
+#sec3 
+{
     text-align: center;
     display: flex;
     justify-content: center;
@@ -88,33 +93,50 @@
     border-radius: 15px;
 }
 
-#sec3 article div {
+#sec3 article div 
+{
     display: inline;
     padding: 20px 0
 }
 
-#sec3 img{
+#sec3 article img
+{
     height: max-content;
     width: 350px;
     display: inline;
     border-radius: 15px;
 }
 
-#sec3 article p {
+#sec3 article p 
+{
     font-size: large;
     margin: 30px 10%;
 }
 
+#sec3 article form
+{
+    padding: 20px 0;
+}
+
+#sec3 article form input
+{
+    background-color: #00b8aa;
+    border-color: #00b8aa;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
 @media only screen and (max-width:1000px)
 {
-    #sec3 
+    #sec3
     {
-        text-align: center;
+        flex-direction: column;
+    }
+
+    #sec3 article
+    {
         display: block;
-        margin: 70px 30px 10px 30px;
-        padding: 20px 20px;
-        background-color: #FED472;
-        border-radius: 15px;
     }
 }
 /* -------------------------------------------------- */

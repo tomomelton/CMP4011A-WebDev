@@ -136,10 +136,28 @@ if (document.querySelector("#energyMain"))
 
                 // ******************* Load image *******************
                 
+                var articleElement = document.createElement("article");
+
                 var imageElement = document.createElement("img")
                 imageElement.src = energyData.publication.imageURL;
                 imageElement.alt = energyData.publication.alt;
-                sectionElement.appendChild(imageElement);
+                articleElement.appendChild(imageElement);
+
+                // ******************* Load Download *******************
+
+                var formElement = document.createElement("form");
+                formElement.method = "GET";
+                formElement.action = "/downloadEnergy";
+
+                var inputElement = document.createElement("input");
+                inputElement.type = "submit";
+                inputElement.value = "Download";
+                formElement.appendChild(inputElement);
+
+                articleElement.appendChild(formElement);
+
+                sectionElement.appendChild(articleElement);
+
             }
         }
         )
