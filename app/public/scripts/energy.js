@@ -34,7 +34,7 @@ if (document.querySelector("#energyMain"))
 
                 // ******************* Load Article *******************
 
-                let articleElement = document.createElement("article");
+                var articleElement = document.createElement("article");
 
                 var pElement = document.createElement("p");
                 let strongElement = document.createElement("strong");
@@ -52,6 +52,8 @@ if (document.querySelector("#energyMain"))
 
                 sectionElement.appendChild(articleElement);
 
+
+
                 // ******************* Load Section 2 *******************
 
                 var sectionElement = document.createElement("section");
@@ -60,15 +62,15 @@ if (document.querySelector("#energyMain"))
 
                 // ******************* Load Subheading *******************
 
-                let h2Element = document.createElement("h2");
-                h2Element.textContent = energyData.subheading;
+                var h2Element = document.createElement("h2");
+                h2Element.textContent = energyData.subheading1;
                 sectionElement.appendChild(h2Element);
                 
                 // ******************* Load Subheading div *******************
 
-                let divElement = document.createElement("div");
+                var divElement = document.createElement("div");
 
-                let h3Element = document.createElement("h3");
+                var h3Element = document.createElement("h3");
                 h3Element.textContent = energyData.event.heading;
                 divElement.appendChild(h3Element);
 
@@ -90,6 +92,72 @@ if (document.querySelector("#energyMain"))
                 var pElement = document.createElement("p")
                 pElement.textContent = energyData.event.description;
                 sectionElement.appendChild(pElement);
+
+
+
+
+                // ******************* Load Section 3 *******************
+
+                var sectionElement = document.createElement("section");
+                sectionElement.setAttribute("id","sec3");
+                mainElement.appendChild(sectionElement);
+
+                // ******************* Load Article *******************
+
+                var articleElement = document.createElement("article");
+
+                // ******************* Load Subheading *******************
+
+                var h2Element = document.createElement("h2");
+                h2Element.textContent = energyData.subheading2;
+                articleElement.appendChild(h2Element);
+                
+                // ******************* Load Subheading div *******************
+
+                var divElement = document.createElement("div");
+
+                var h3Element = document.createElement("h3");
+                h3Element.textContent = energyData.publication.name;
+                divElement.appendChild(h3Element);
+
+                var pElement = document.createElement("p");
+                pElement.textContent = energyData.publication.date;
+                divElement.appendChild(pElement);
+
+                articleElement.appendChild(divElement);
+
+                // ******************* Load Paragraph *******************
+
+                var pElement = document.createElement("p")
+                pElement.textContent = energyData.publication.description;
+                articleElement.appendChild(pElement);
+
+                sectionElement.appendChild(articleElement);
+
+                // ******************* Load image *******************
+                
+                var articleElement = document.createElement("article");
+
+                var imageElement = document.createElement("img")
+                imageElement.src = energyData.publication.imageURL;
+                imageElement.alt = energyData.publication.alt;
+                articleElement.appendChild(imageElement);
+
+                // ******************* Load Download *******************
+
+                var formElement = document.createElement("form");
+                formElement.method = "GET";
+                formElement.action = "/downloadEnergy";
+
+                var inputElement = document.createElement("input");
+                inputElement.type = "submit";
+                inputElement.value = "Download";
+                formElement.appendChild(inputElement);
+
+                articleElement.appendChild(formElement);
+
+                sectionElement.appendChild(articleElement);
+
             }
         }
         )
