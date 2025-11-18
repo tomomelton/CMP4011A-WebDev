@@ -9,7 +9,7 @@
             "p1": "To ensure access to affordable, reliable, sustainable, and moders energy for all",
             "p2": "In 2015, the UN General Assembly adopted the 2030 Agenda for Sustainable Development, which include a dedicated and stand-alone goal on energy, SDG 7, calling to 'ensure access to affordable, reliable, sustainable and modern energy for all'. Energy lies at the heart of both the 2030 Agenda for Sustainable Development and the Paris Agreement on Climate Change. Achieving SDG7 will open a new world of opportunities for millions of people through new economic opportunities and jobs, empowered women, children and youth, better education and health, more sustainable, equitable and inclusive communities, and greater protections from, and resilience to, climate change. The Global Roadmap for Accelerated SDG 7 Action resulting from the High-level Dialogue on Energy 2021 provides a guide for collective action on energy across sectors." 
         },
-        "subheading": "Events",
+        "subheading1": "Events",
         "event":
         {
             "heading": "UN Celebrates the First World Clean Energy Day",
@@ -17,6 +17,16 @@
             "description": "On January 26, the United Nations marks its very first International Day of Clean Energy, representing a significant milestone in our collective commitment to a sustainable future. Adopted by the UN General Assembly, this day signifies a global celebration of clean energy and its pivotal role in achieving a just and inclusive energy transition. With a dedicated focus on advocating for clean and renewable energy sources, this occasion serves as a unifying platform for governments, businesses, and individuals across the globe to expedite the shift towards more sustainable and efficient energy systems. Let us unite in advancing awareness, innovation, and collaborative efforts to address climate change and ensure a cleaner, greener planet for generations to come",
             "imageURL": "images/energy 2.jpg",
             "alt": "Woman Cleaning Solar Pannel"
+        },
+        "subheading2": "Publications",
+        "publication":
+        {
+            "name": "SDG 7 Policy Briefs 2021",
+            "date": "Publication Year: 2021",
+            "description": "Decisive action on sustainable energy can catalyse progress towards all the other SDGs, as well as global climate protection targets. Energy is essential to all other SDGs: ending poverty and hunger, running healthcare facilities, providing access to education, improving gender equality, providing access to clean water and sanitation, promoting sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all, reducing inequalities, promoting sustainable production and consumption, building sustainable cities and communities, life below water and on land, creating peace, justice and strong institutions, promoting biodiversity and catalyzing climate action.",
+            "imageURL": "images/energy 3.png",
+            "alt": "Publication Cover",
+            "fileURL": "downloads/SDG 7 Policy Briefs 2021.pdf"
         }
     }
 ]

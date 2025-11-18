@@ -25,8 +25,31 @@
     border-radius: 15px;
     font-size: large;
 }
-/* -------------------------------------------------- */
 
+@media only screen and (max-width:1400px)
+{
+    #sec1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+
+    #sec1 article
+    {
+        display: block;
+        margin: 20px;
+    }
+
+    #sec1 img 
+    {
+        height: auto;
+        width: 500px;
+        display: block;
+        margin: 20px;
+    }
+}
 /* -------------------- Section 2 --------------------*/
 #sec2 {
     text-align: center;
@@ -54,33 +77,44 @@
 }
 /* -------------------------------------------------- */
 
-@media only screen and (max-width:1400px)
-{
-/* -------------------- Section 1 --------------------*/
-    #sec1
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column
-    }
-
-    #sec1 article
-    {
-        display: block;
-        margin: 20px;
-    }
-
-    #sec1 img 
-    {
-        height: auto;
-        width: 500px;
-        display: block;
-        margin: 20px;
-    }
-/* -------------------------------------------------- */
-
-/* -------------------- Section 2 --------------------*/
-
-/* -------------------------------------------------- */
+/* -------------------- Section 3 --------------------*/
+#sec3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 70px 30px 10px 30px;
+    padding: 20px 20px;
+    background-color: #FED472;
+    border-radius: 15px;
 }
+
+#sec3 article div {
+    display: inline;
+    padding: 20px 0
+}
+
+#sec3 img{
+    height: max-content;
+    width: 350px;
+    display: inline;
+    border-radius: 15px;
+}
+
+#sec3 article p {
+    font-size: large;
+    margin: 30px 10%;
+}
+
+@media only screen and (max-width:1000px)
+{
+    #sec3 
+    {
+        text-align: center;
+        display: block;
+        margin: 70px 30px 10px 30px;
+        padding: 20px 20px;
+        background-color: #FED472;
+        border-radius: 15px;
+    }
+}
+/* -------------------------------------------------- */
