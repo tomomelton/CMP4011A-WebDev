@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Website to provide information about several UN Sustainable Development Goals",
+  "repository": {
+    "type": "git",
+    "url": "CMP4011A-WebDev"
+  },
+  "license": "ISC",
+  "author": "Group C19",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
