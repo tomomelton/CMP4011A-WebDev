@@ -68,6 +68,10 @@ if (document.querySelector('#indexMain'))
                     imgElement.setAttribute("id", "indexImage");
                     sectionChild.appendChild(imgElement);
 
+                    //-----------LOADING SECOND CHILD SECTION---------
+                    var sectionChild = document.createElement("section");
+                    sectionParent.appendChild(sectionChild);
+
 
                     
 
