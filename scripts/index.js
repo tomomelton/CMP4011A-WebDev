@@ -79,6 +79,11 @@ if (document.querySelector('#indexMain'))
                     imgElement.setAttribute("id", "indexImage");
                     sectionChild.appendChild(imgElement);
 
+                    //-----------LOADING TEXT BOX 2--------------------
+                    var sectionElement = document.createElement("section");
+                    sectionElement.setAttribute("id", "textBox");
+                    mainElement.appendChild(sectionElement);
+
 
                     
 
