@@ -84,6 +84,12 @@ if (document.querySelector('#indexMain'))
                     sectionElement.setAttribute("id", "textBox");
                     mainElement.appendChild(sectionElement);
 
+                    //------------LOADING 2nd SUBHEADING---------------
+                    var subElement = document.createElement("h3");
+                    subElement.textContent = indexData.subheading;
+                    subElement.setAttribute("id", "subheading");
+                    sectionElement.appendChild(subElement);
+
 
                     
 
