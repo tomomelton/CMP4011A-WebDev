@@ -72,6 +72,13 @@ if (document.querySelector('#indexMain'))
                     var sectionChild = document.createElement("section");
                     sectionParent.appendChild(sectionChild);
 
+                    //----------LOADING FOURTH IMAGE------------------
+                    var imgElement = document.createElement("IMG");
+                    imgElement.src = indexData.URL4;
+                    imgElement.alt = indexData.alt4;
+                    imgElement.setAttribute("id", "indexImage");
+                    sectionChild.appendChild(imgElement);
+
 
                     
 
