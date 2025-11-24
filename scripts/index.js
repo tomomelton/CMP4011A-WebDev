@@ -97,8 +97,36 @@ if (document.querySelector('#indexMain'))
 
                     //-----------LOADING UL CONTENT--------------------
                     var pElement = document.createElement("p");
-                    pElement.textContent = indexData.p1;
+                    pElement.textContent = indexData.p2;
                     sectionChild.appendChild(pElement);
+
+                    var pElement = document.createElement("p");
+                    pElement.textContent = indexData.p3;
+                    sectionChild.appendChild(pElement);
+
+                    var pElement = document.createElement("p");
+                    pElement.textContent = indexData.p4;
+                    sectionChild.appendChild(pElement);
+
+                    var ulElement = document.createElement("ul");
+                    sectionChild.appendChild(ulElement);
+
+                    var liElement = document.createElement("li");
+                    liElement.textContent = indexData.li1;
+                    ulElement.appendChild(liElement);
+
+                    var liElement = document.createElement("li");
+                    liElement.textContent = indexData.li2;
+                    ulElement.appendChild(liElement);
+
+                    var liElement = document.createElement("li");
+                    liElement.textContent = indexData.li3;
+                    ulElement.appendChild(liElement);
+
+                    var pElement = document.createElement("p");
+                    pElement.textContent = indexData.p5;
+                    sectionChild.appendChild(pElement);
+
 
 
                     
