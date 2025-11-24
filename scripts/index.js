@@ -42,7 +42,7 @@ if (document.querySelector('#indexMain'))
 
                     //-------------LOADING SUBHEADING 1------------
                     var subElement = document.createElement("h3");
-                    subElement.textContent = indexData.subheading;
+                    subElement.textContent = indexData.subheading1;
                     subElement.setAttribute("id", "subheading");
                     sectionParent.appendChild(subElement);
 
@@ -82,11 +82,11 @@ if (document.querySelector('#indexMain'))
                     //-----------LOADING TEXT BOX 2--------------------
                     var sectionElement = document.createElement("section");
                     sectionElement.setAttribute("id", "textBox");
-                    mainElement.appendChild(sectionElement);
+                    divElement.appendChild(sectionElement);
 
                     //------------LOADING 2nd SUBHEADING---------------
                     var subElement = document.createElement("h3");
-                    subElement.textContent = indexData.subheading;
+                    subElement.textContent = indexData.subheading2;
                     subElement.setAttribute("id", "subheading");
                     sectionElement.appendChild(subElement);
 
@@ -96,7 +96,9 @@ if (document.querySelector('#indexMain'))
                     sectionElement.appendChild(sectionChild);
 
                     //-----------LOADING UL CONTENT--------------------
-                    
+                    var pElement = document.createElement("p");
+                    pElement.textContent = indexData.p1;
+                    sectionChild.appendChild(pElement);
 
 
                     
