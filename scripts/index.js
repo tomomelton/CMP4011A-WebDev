@@ -57,6 +57,12 @@ if (document.querySelector('#indexMain'))
                     imgElement.setAttribute("id", "indexImage");
                     sectionParent.appendChild(imgElement);
 
+                    //-----------LOADING FIRST CHILD SECTION--------
+                    var sectionChild = document.createElement("section");
+                    sectionParent.appendChild(sectionChild);
+
+                    
+
                 }
             }
         )
