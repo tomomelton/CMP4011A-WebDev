@@ -1,0 +1,138 @@
+body {
+    /* Cannot find the fonts we selected */
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #e0e0e0;
+}
+
+
+/* -------------------- Header and Nav formatting -------------------- */
+header {
+    color: black;
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+nav ul {
+    background-color: #006096;
+    padding: 15px;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    margin: 0 3%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #00b8aa;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+/* Highlights under currently selected page */
+.active {
+    border-bottom: 6px solid #003632;
+}
+
+/* Image formatting */
+div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    padding: 5px 0;
+}
+
+.logo {
+    height: auto;
+    width: 90px;
+    margin-left: 3%;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* ------------------------------------------------------------ */
+
+/* -------------------- Footer Formatting -------------------- */
+footer {
+    padding: 5px 0;
+    margin: 15px 0;
+    text-align: center;
+    background-color: #006096;
+    color: #ffff;
+}
+
+footer p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer div img {
+    background-color: #ffff;
+    padding: 8px;
+    border-radius: 6px;
+}
+/* ------------------------------------------------------------ */
+
+
+main {
+    margin: auto 5%;
+    padding: 16px;
+    border: 2px solid #00b8aa;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+}
+/* Dropdown menu in nav*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00b8aa;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 999; 
+}
+
+/* Display menu with hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content li a {
+    display: block;
+    padding: 5px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* hover effect */
+.dropdown-content li a:hover {
+    background-color: #003632;
+}
+
+/* added hover effect to nav bar */
+nav li a:hover {
+    background-color: #003632;
+}
