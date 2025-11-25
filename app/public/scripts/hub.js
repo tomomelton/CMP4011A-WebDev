@@ -4,40 +4,38 @@ fetch(jsonFile)
   .then((response) => response.json())
   .then((data) => {
     // UN Goal number 1
-    if (document.querySelector("#peace")) {
-      let peaceElement = document.querySelector("#peace");
-      let peaceData = data[0].peace;
+    if (document.querySelector(".goal2")) {
+      let goal2Element = document.querySelector(".goal2");
+      let goal2Data = data[0].goal2;
 
-      peaceElement.innerHTML = `
-                <h2>${peaceData.title}</h2>
-                <p>${peaceData.p1}</p>
-                <p>${peaceData.p2}</p>
+      goal2Element.innerHTML = `
+                <h1>${goal2Data.h1}</h1>
+                <p>${goal2Data.p1}</p>
+                <img src="${goal2Data.img_url}"></p>
             `;
     }
 
-    // SLIDE 2 -------------------------
-    if (document.querySelector("#justice")) {
-      let justiceElement = document.querySelector("#justice");
-      let justiceData = data[0].justice;
+    // UN Goal 7
+    if (document.querySelector(".goal7")) {
+      let goal7Element = document.querySelector(".goal7");
+      let goal7Data = data[0].goal7;
 
-      justiceElement.innerHTML = `
-                <h2>${justiceData.title}</h2>
-                <p>${justiceData.p1}</p>
-                <p>${justiceData.p2}</p>
-                <p>${justiceData.p3}</p>
+      goal7Element.innerHTML = `
+                <h1>${goal7Data.h1}</h1>
+                <p>${goal7Data.p1}</p>
+                <img src="${goal7Data.img_url}"></p>
             `;
     }
 
-    // SLIDE 3 -------------------------
-    if (document.querySelector("#institutions")) {
-      let instElement = document.querySelector("#institutions");
-      let institutionsData = data[0].institutions;
+    // UN Goal 16
+    if (document.querySelector(".goal16")) {
+      let goal16Element = document.querySelector(".goal16");
+      let goal16Data = data[0].goal16;
 
-      instElement.innerHTML = `
-                <h2>${institutionsData.title}</h2>
-                <p>${institutionsData.p1}</p>
-                <p>${institutionsData.p2}</p>
-                <p>${institutionsData.p3}</p>
+      goal16Element.innerHTML = `
+                <h1>${goal16Data.h1}</h1>
+                <p>${goal16Data.p1}</p>
+                <img src="${goal16Data.img_url}"></p>
             `;
     }
   })
