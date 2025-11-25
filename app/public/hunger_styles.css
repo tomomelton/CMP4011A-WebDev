@@ -1,0 +1,45 @@
+.img_carousel {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img_carousel > img {
+  width: 500px;
+  border-radius: 20px;
+}
+
+.goal_texts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.goal_texts article {
+  width: 20%;
+  background-color: #c6c6c6;
+  padding: 25px;
+  margin-left: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.goal_texts article p {
+  color: #5d5d5d;
+}
+.center-text {
+  height: auto;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text1,
+.text3 {
+  min-height: 450px; /* adjust until it looks perfect */
+}
