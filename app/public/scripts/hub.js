@@ -40,3 +40,19 @@ fetch(jsonFile)
     }
   })
   .catch((err) => console.error("Error loading JSON:", err));
+
+// Event listener for the clicking of hub elements
+let goal2 = document.querySelector(".goal2");
+goal2.addEventListener("click", () => {
+  window.location.replace("/hunger.html");
+});
+
+let goal7 = document.querySelector(".goal7");
+goal7.addEventListener("click", () => {
+  window.location.replace("/energy.html");
+});
+
+let goal16 = document.querySelector(".goal16");
+goal16.addEventListener("click", () => {
+  window.location.replace("/peace.html");
+});
