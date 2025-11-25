@@ -11,7 +11,7 @@ fetch(jsonFile)
       goal2Element.innerHTML = `
                 <h1>${goal2Data.h1}</h1>
                 <p>${goal2Data.p1}</p>
-                <img src="${goal2Data.img_url}"></p>
+                <img src="${goal2Data.img_url}">
             `;
     }
 
@@ -23,7 +23,7 @@ fetch(jsonFile)
       goal7Element.innerHTML = `
                 <h1>${goal7Data.h1}</h1>
                 <p>${goal7Data.p1}</p>
-                <img src="${goal7Data.img_url}"></p>
+                <img src="${goal7Data.img_url}">
             `;
     }
 
@@ -35,7 +35,7 @@ fetch(jsonFile)
       goal16Element.innerHTML = `
                 <h1>${goal16Data.h1}</h1>
                 <p>${goal16Data.p1}</p>
-                <img src="${goal16Data.img_url}"></p>
+                <img src="${goal16Data.img_url}">
             `;
     }
   })

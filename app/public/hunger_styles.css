@@ -24,7 +24,6 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }
 
 .goal_texts article p {
