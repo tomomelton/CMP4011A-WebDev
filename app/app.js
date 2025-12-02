@@ -26,3 +26,14 @@ app.get("/downloadEnergy", (req, res) =>
         }
     });
 });
+
+// ******************* Newsletter Form Handling *******************
+app.post("/newsletter", (req, res)=>{
+//process form data here
+ console.log(req.body);
+ const firstname = req.body.firstname;
+ const email = req.body.email;
+ const message = req.body.message;
+
+ res.json({name:firstname, email:email});
+});
