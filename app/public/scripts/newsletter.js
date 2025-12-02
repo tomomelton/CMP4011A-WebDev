@@ -1,6 +1,7 @@
 
 let myForm = document.querySelector('form');
-let myFirstName = document.querySelector('#firstname');
+let myFirstName = document.querySelector('#FirstName');
+let myLastName = document.querySelector('#LastName');
 let myEmail = document.querySelector('#email');
 let myMessage = document.querySelector('#message');
 
@@ -11,8 +12,8 @@ if (myForm) {
   myForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formBody = {
-      firstname:myFirstName.value,
-      /*lastname:myName.value,*/
+      FirstName:myFirstName.value,
+      LastName:myLastName.value,
       email:myEmail.value,
       message:message.value
     }
@@ -27,7 +28,7 @@ if (myForm) {
     }).then(response => response.json())
       .then((responsedata) => {
         console.log(responsedata);
-        paraMessage.textContent=`Hi ${responsedata.name}, your message
+        paraMessage.textContent=`Hi ${responsedata.FirstName}, your message
         has been received, we will contact you at ${responsedata.email}`;
       })
 
