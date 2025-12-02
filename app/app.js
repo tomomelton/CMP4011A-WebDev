@@ -31,9 +31,10 @@ app.get("/downloadEnergy", (req, res) =>
 app.post("/newsletter", (req, res)=>{
 //process form data here
  console.log(req.body);
- const firstname = req.body.firstname;
+ const FirstName = req.body.FirstName;
+ const LastName = req.body.LastName;
  const email = req.body.email;
  const message = req.body.message;
 
- res.json({name:firstname, email:email});
+ res.json({FirstName:FirstName, email:email});
 });
