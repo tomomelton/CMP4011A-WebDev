@@ -1,0 +1,23 @@
+[
+    {
+        "heading":"Home Page",
+        "URL1":"images/homeImage.jpg",
+        "alt":"poster for UN Development goals guide for local councils.",
+        "subheading1":"Our Goal",
+        "subheading2": "Some Context",
+        "p1":"Our Goal as an SAC is to deliver key information on some of the United Nations Sustainable Development Goals; namely Zero Hunger (Goal 2), Clean and Affordable Energy(Goal 7), and Peace, Justice and Strong Institutions(Goal 16).",
+        "URL2":"images/hunger.jpg",
+        "alt2":"UN SDG 2: Hunger",
+        "URL3":"images/energy3.jpg",
+        "alt3":"UN SDG 7: Energy",
+        "URL4":"images/pji.jpg",
+        "alt4":"UN SDG 16: PJI",
+        "p2":"The United Nations Sustainable Development Goals are the culmination of many years of co-operation between countries and the UN to bring about a more sustainable and bright future by taking actions to improve sustainability.",
+        "p3":"The 17 sustainability goals, alongside 169 targets collectively form the 2030 Agenda for Sustainable Development, which was recognised by all UN member states back in 2015.",
+        "p4":"Some key events leading up to the 2030 Agenda for Sustainable Development:",
+        "li1":"1992 Earth Summit(Rio, Brazil) - Agenda 21",
+        "li2":"2000 Millennium Summit(UN HQ, New York, USA) - Millennium Development Goals",
+        "li3":"2002 World Summit on Sustainable Development(Johannesburg, South Africa) - commitments to end poverty and increase multilateral co-operation",
+        "p5":"Along with many more recent developments and conferences."
+    }
+]

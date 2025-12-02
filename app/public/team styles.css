@@ -1,0 +1,53 @@
+#heading{
+    font-style:italic;
+    /* font-family:'Arial', , serif; */
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+#card{
+    background-color: lightblue;
+    border: 2px solid dodgerblue;
+    border-radius:15px;
+    opacity: 80%;
+    text-align:center;
+    font-weight:bold;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 300px;
+    height: 400px;
+    
+}
+
+#card h2{
+    text-decoration: underline;
+}
+
+#level{
+    justify-content: center;
+    text-align:justify;
+    padding-bottom:75px;
+}
+
+#profile{
+    width: 200px;
+    height:200px;
+}
+
+@media only screen and (max-width:1000px){
+    #card{
+        width:150px;
+        height:150px;
+        display:block;
+        font-size:10px;
+
+    }
+    #card h2{
+        font-size:50%;
+    }
+    #profile{
+        width:50px;
+        height:50px;
+    }
+}
