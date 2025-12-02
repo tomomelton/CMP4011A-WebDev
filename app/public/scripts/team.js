@@ -97,6 +97,7 @@ if (document.querySelector('#teamMain'))
                     //------------DIV LEVEL CONTAINER----------
                     var divElement = document.createElement("div");
                     divElement.setAttribute("id", "level");
+                    divElement.setAttribute("class", "level2")
                     mainElement.appendChild(divElement);
 
                     //-----------------CHRIS CARD---------------------
