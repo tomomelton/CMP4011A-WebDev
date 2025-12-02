@@ -1,0 +1,35 @@
+.hub-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hub-main article {
+  width: 25%;
+  background-color: #00b8aa;
+  padding: 25px;
+  margin-left: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+article img {
+  height: auto;
+  width: 75%;
+  border-radius: 20px;
+}
+
+.active-goal {
+  height: 500px;
+  font-size: larger;
+}
+
+.active-goal img {
+  height: auto;
+  width: 95%;
+  border-radius: 20px;
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "goal2": {
+      "h1": "UN Goal 2: Zero Hunger",
+      "p1": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture. This goal relates to ensuring everyone has access to good, nurtritional food. Eliminating food poverty",
+      "img_url": "images/hub-1.jpg"
+    },
+
+    "goal7": {
+      "h1": "UN Goal 7: Energy",
+      "p1": "Ensure access to affordable, reliable, sustainable and modern energy for all. Facilitate the clean energy transition and support the development of technical, policy and governance solutions to accelerate this achievement",
+      "img_url": "images/hub-2.webp"
+    },
+
+    "goal16": {
+      "h1": "UN Goal 16: Peace",
+      "p1": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels. World peace is a step toward a better world",
+      "img_url": "images/hub-3.jpg"
+    }
+  }
+]
