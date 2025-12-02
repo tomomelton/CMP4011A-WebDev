@@ -1,0 +1,36 @@
+[
+    {
+        "h1":"Meet The Team",
+        "name":"Moni Egbo-Ozolua",
+        "src":"images/moni.jpg",
+        "alt":"Moni Egbo-Ozolua",
+        "role":"Group Member",
+        "pages":"Page(s): Newsletter",
+
+        "name2":"Tom Melton",
+        "src2":"images/tom.jpg",
+        "alt2":"Tom Melton",
+        "role2":"Group Leader",
+        "pages2":"Page(s): Energy",
+
+        "name3":"Henry Barnes",
+        "src3":"images/henry.jpg",
+        "alt3":"Henry Barnes",
+        "role3":"Group Member",
+        "pages3":"Page(s): Hunger, Goals Hub",
+
+        "name4":"Chris Guiterrez Rubio",
+        "src4":"images/chris.jpg",
+        "alt4":"Chris Rubio",
+        "role4":"Group Member",
+        "pages4":"Page(s): PJI",
+
+        "name5":"Josh Wickstrom",
+        "src5":"images/josh.jpg",
+        "alt5":"Joshua Wickstrom",
+        "role5":"Group Member",
+        "pages5":"Page(s): Home, Meet The Team"
+    }
+        
+    
+]
