@@ -6,7 +6,6 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="news_styles.css">
-    <script src="app.js" defer></script>
     <script src="scripts/header-footer.js" defer></script>
     <script src="scripts/newsletter.js" defer></script>
 </head>
@@ -34,7 +33,7 @@
     <h1> Newsletter Sign Up</h1>
     <main class="newsmain">
             <section>
-                <form id="myform" method="post" action="#">
+                <form id="myform" method="post" action="/newsletter">
                     <fieldset>
 
                         <img src="images/envelope.png" class ="imgEnvelope">
@@ -49,11 +48,11 @@
                             }
                         </style>
                             
-                        <label for="First-name">First Name *:</label>
-                        <input type="text" placeholder="Please enter your first name.." id="First-name" name="first-name" required>
+                        <label for="Firstname">First Name *:</label>
+                        <input type="text" placeholder="Please enter your first name.." id="firstname" name="firstname" required>
                         
-                        <label for="Last-name">Last Name *:</label>
-                        <input type="text" placeholder="Please enter your last name..." id="Last-name" name="Last" required>
+                        <label for="Lastname">Last Name *:</label>
+                        <input type="text" placeholder="Please enter your last name..." id="lastname" name="Lastname" required>
                      
                         <label for="email"> Email *:</label>
                         <input type="email" placeholder="Please enter your email address..." id="email" name="email" required>
