@@ -20,25 +20,25 @@ if (document.querySelector('#indexMain'))
                     h1Element.setAttribute("id", "title");
                     mainElement.appendChild(h1Element);
 
-                    var divElement = document.createElement("div");
-                    mainElement.appendChild(divElement);
+                    var superSection = document.createElement("section");
+                    mainElement.appendChild(superSection);
 
                     //------------LOADING FIRST IMAGE-------------
                     var imgElement = document.createElement("IMG");
                     imgElement.src = indexData.URL1;
                     imgElement.alt = indexData.alt;
                     imgElement.setAttribute("id", "homeImage");
-                    divElement.appendChild(imgElement);
+                    superSection.appendChild(imgElement);
 
                     //----------LOADING SECTION CONTAINER----------
-                    var divElement = document.createElement("div");
-                    divElement.setAttribute("id", "sectionContainer");
-                    mainElement.appendChild(divElement);
+                    var superSection = document.createElement("section");
+                    superSection.setAttribute("id", "sectionContainer");
+                    mainElement.appendChild(superSection);
 
                     //-------------LOADING TEXTBOX 1---------------
                     let sectionParent = document.createElement("section");
                     sectionParent.setAttribute("id", "textBox");
-                    divElement.appendChild(sectionParent);
+                    superSection.appendChild(sectionParent);
 
                     //-------------LOADING SUBHEADING 1------------
                     var subElement = document.createElement("h3");
@@ -82,7 +82,7 @@ if (document.querySelector('#indexMain'))
                     //-----------LOADING TEXT BOX 2--------------------
                     var sectionElement = document.createElement("section");
                     sectionElement.setAttribute("id", "textBox");
-                    divElement.appendChild(sectionElement);
+                    superSection.appendChild(sectionElement);
 
                     //------------LOADING 2nd SUBHEADING---------------
                     var subElement = document.createElement("h3");

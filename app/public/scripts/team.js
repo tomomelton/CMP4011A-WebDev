@@ -20,15 +20,15 @@ if (document.querySelector('#teamMain'))
                     h1Element.textContent = teamData.h1;
                     mainElement.appendChild(h1Element);
 
-                    //------------DIV LEVEL CONTAINER----------
-                    var divElement = document.createElement("div");
-                    divElement.setAttribute("id", "level");
-                    mainElement.appendChild(divElement);
+                    //------------SECTION LEVEL CONTAINER----------
+                    var superSection = document.createElement("section");
+                    superSection.setAttribute("id", "level");
+                    mainElement.appendChild(superSection);
 
                     //-----------------MONI CARD---------------------
                     var sectionElement = document.createElement("section");
                     sectionElement.setAttribute("id", "card");
-                    divElement.appendChild(sectionElement);
+                    superSection.appendChild(sectionElement);
 
                     var h2Element = document.createElement("h2");
                     h2Element.textContent = teamData.name;
@@ -51,7 +51,7 @@ if (document.querySelector('#teamMain'))
                     //-----------------TOM CARD---------------------
                     var sectionElement = document.createElement("section");
                     sectionElement.setAttribute("id", "card");
-                    divElement.appendChild(sectionElement);
+                    superSection.appendChild(sectionElement);
 
                     var h2Element = document.createElement("h2");
                     h2Element.textContent = teamData.name2;
@@ -74,7 +74,7 @@ if (document.querySelector('#teamMain'))
                     //-----------------HENRY CARD---------------------
                     var sectionElement = document.createElement("section");
                     sectionElement.setAttribute("id", "card");
-                    divElement.appendChild(sectionElement);
+                    superSection.appendChild(sectionElement);
 
                     var h2Element = document.createElement("h2");
                     h2Element.textContent = teamData.name3;
@@ -95,15 +95,15 @@ if (document.querySelector('#teamMain'))
                     sectionElement.appendChild(pElement);
 
                     //------------DIV LEVEL CONTAINER----------
-                    var divElement = document.createElement("div");
-                    divElement.setAttribute("id", "level");
-                    divElement.setAttribute("class", "level2")
-                    mainElement.appendChild(divElement);
+                    var superSection = document.createElement("section");
+                    superSection.setAttribute("id", "level");
+                    superSection.setAttribute("class", "level2")
+                    mainElement.appendChild(superSection);
 
                     //-----------------CHRIS CARD---------------------
                     var sectionElement = document.createElement("section");
                     sectionElement.setAttribute("id", "card");
-                    divElement.appendChild(sectionElement);
+                    superSection.appendChild(sectionElement);
 
                     var h2Element = document.createElement("h2");
                     h2Element.textContent = teamData.name4;
@@ -126,7 +126,7 @@ if (document.querySelector('#teamMain'))
                     //-----------------JOSH CARD---------------------
                     var sectionElement = document.createElement("section");
                     sectionElement.setAttribute("id", "card");
-                    divElement.appendChild(sectionElement);
+                    superSection.appendChild(sectionElement);
 
                     var h2Element = document.createElement("h2");
                     h2Element.textContent = teamData.name5;

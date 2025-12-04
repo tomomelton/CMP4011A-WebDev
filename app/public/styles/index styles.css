@@ -30,7 +30,7 @@
     font-weight:normal;
     text-decoration: none;
     text-align:center;
-    display:inline;
+    display:block;
 }
 
 #subheading{
@@ -55,11 +55,12 @@
     padding-left:auto;
     padding-right:auto;
     justify-content: center;
+    display:flex;
 }
 
 #pcontainer{
     justify-content:center;
     height:10px;
     text-align: center;
-    display: inline;
+    display: block;
 }
