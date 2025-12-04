@@ -45,6 +45,7 @@
 #button{
     background-color: lightblue;
     border-color: dodgerblue;
+    border-radius:15px;
 }
 
 @media only screen and (max-width:1000px){
