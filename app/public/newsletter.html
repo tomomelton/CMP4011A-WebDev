@@ -1,13 +1,23 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/news_styles.css">
     <script src="scripts/header-footer.js" defer></script>
     <script src="scripts/newsletter.js" defer></script>
+    <title>UN Sustainable Development Goals</title>
+    <style >
+    .imgEnvelope {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: auto;
+    }
+    </style>
 </head>
 
 <body>
@@ -24,8 +34,8 @@
 						<li><a href="peace.html">PJI</a></li>
                     </ul>
                 </li>
-                <li><a href="newsletter.html", class="active">Newsletter</a></li>
-                <li><a href="about.html">Team</a></li>
+                <li><a href = "newsletter.html" class="active">Newsletter</a></li>
+                <li><a href = " about.html " >Team</a></li>
             </ul>
         </nav>
     </header>
@@ -33,32 +43,23 @@
     <h1> Newsletter Sign Up</h1>
     <main class="newsmain">
             <section>
-                <form id="myform" method="post" action="/newsletter">
+                <h2>Sign up to our newsletter!</h2><form id="myform" method="post" action="/newsletter">
                     <fieldset>
 
-                        <img src="images/envelope.png" class ="imgEnvelope">
-
-                        <style >
-                            .imgEnvelope {
-                                display: block;
-                                margin-left: auto;
-                                margin-right: auto;
-                                width: 150px;
-                                height: auto;
-                            }
-                        </style>
+                        <img src="images/envelope.png" alt="Email envelope icon" class ="imgEnvelope">
+                    
                             
-                        <label for="Firstname">First Name *:</label>
+                        <label for="FirstName">First Name *:</label>
                         <input type="text" placeholder="Please enter your first name.." id="FirstName" name="FirstName" required>
                         
-                        <label for="Lastname">Last Name *:</label>
+                        <label for="LastName">Last Name *:</label>
                         <input type="text" placeholder="Please enter your last name..." id="LastName" name="LastName" required>
                      
                         <label for="email"> Email *:</label>
                         <input type="email" placeholder="Please enter your email address..." id="email" name="email" required>
 
-                        <label for="Comments">Comment :</label>
-                        <textarea id="message" placeholder="Please any comments..." name="message" ></textarea>
+                        <label for="message">Comment :</label>
+                        <textarea id="message" placeholder="Please leave any comments..." name="message" ></textarea>
 
                         <input id=submit type="submit" value="Submit">
                         <p id="confirmMessage">* Required field</p>
