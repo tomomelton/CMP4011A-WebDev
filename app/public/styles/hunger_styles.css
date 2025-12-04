@@ -1,12 +1,51 @@
+/* Carousel container */
 .img_carousel {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
-.img_carousel > img {
-  width: 500px;
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 550px; /* Pick a height that fits your design */
+  object-fit: cover;
   border-radius: 20px;
+}
+
+/* Next/Prev buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 .goal_texts {
@@ -40,5 +79,5 @@
 
 .text1,
 .text3 {
-  min-height: 450px; /* adjust until it looks perfect */
+  min-height: 450px;
 }
