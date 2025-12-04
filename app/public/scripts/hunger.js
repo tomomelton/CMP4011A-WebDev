@@ -13,7 +13,7 @@ fetch(jsonFile)
       let text3Data = data[0].text3;
       let downloadButtonData = data[0].downloadButton;
 
-      goalTitleElement.innerHTML = `
+      hungerMain.innerHTML = `
       <section class="goal_title">
         <h1>${goalTitleData.h1}</h1>
       </section>
@@ -63,54 +63,9 @@ fetch(jsonFile)
       </article>
                 
             `;
-    }
-
-    // Image carousel
-    if (document.querySelector(".img_carousel")) {
-      let imageCarouselElement = document.querySelector(".img_carousel");
-
-      imageCarouselElement.innerHTML = `
-      
-    `;
 
       slideIndex = 1;
       showSlides(slideIndex);
-    }
-
-    // Overview text
-    if (document.querySelector(".text1")) {
-      let text1Element = document.querySelector(".text1");
-
-      text1Element.innerHTML = `
-                
-            `;
-    }
-
-    // Guidelines text
-    if (document.querySelector(".text2")) {
-      let text2Element = document.querySelector(".text2");
-
-      text2Element.innerHTML = `
-                
-            `;
-    }
-
-    // Key facts text
-    if (document.querySelector(".text2")) {
-      let text3Element = document.querySelector(".text3");
-
-      text3Element.innerHTML = `
-                
-            `;
-    }
-
-    // Download button
-    if (document.querySelector(".download_button")) {
-      let downloadButton = document.querySelector(".download_button");
-
-      downloadButton.innerHTML = `
-                
-            `;
     }
   })
   .catch((err) => console.error("Error loading JSON:", err));
