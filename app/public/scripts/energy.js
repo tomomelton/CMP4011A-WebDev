@@ -1,166 +1,152 @@
+if (document.querySelector("#energyMain")) {
+  let mainElement = document.querySelector("#energyMain");
+  let jsonFile = "data/Energy.json";
 
-if (document.querySelector("#energyMain"))
-{
-    let mainElement = document.querySelector("#energyMain");
-    let jsonFile = "data/Energy.json";
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch(jsonFile)
+      .then((response) => response.json())
+      .then((responseData) => {
+        for (energyData of responseData) {
+          // ******************* Load Heading *******************
 
-    document.addEventListener("DOMContentLoaded", () =>
-    {
-        fetch(jsonFile)
-        .then(response => response.json())
-        .then(responseData =>
-            
-        {
-            for (energyData of responseData)
-            {
-                // ******************* Load Heading *******************
+          let h1Element = document.createElement("h1");
+          h1Element.textContent = energyData.heading;
+          mainElement.appendChild(h1Element);
 
-                let h1Element = document.createElement("h1");
-                h1Element.textContent = energyData.heading;
-                mainElement.appendChild(h1Element);
+          // ******************* Load Section 1 *******************
 
-                // ******************* Load Section 1 *******************
+          var sectionElement = document.createElement("section");
+          sectionElement.setAttribute("id", "sec1");
+          mainElement.appendChild(sectionElement);
 
-                var sectionElement = document.createElement("section");
-                sectionElement.setAttribute("id","sec1");
-                mainElement.appendChild(sectionElement);
+          // ******************* Load Image *******************
 
-                // ******************* Load Image *******************
+          var imageElement = document.createElement("img");
+          imageElement.src = energyData.imageURL;
+          imageElement.alt = energyData.alt;
+          sectionElement.appendChild(imageElement);
 
-                var imageElement = document.createElement("img");
-                imageElement.src = energyData.imageURL;
-                imageElement.alt = energyData.alt;
-                sectionElement.appendChild(imageElement);
+          // ******************* Load Article *******************
 
-                // ******************* Load Article *******************
+          var articleElement = document.createElement("article");
 
-                var articleElement = document.createElement("article");
+          var pElement = document.createElement("p");
+          let strongElement = document.createElement("strong");
+          strongElement.textContent = energyData.description.goal;
+          pElement.appendChild(strongElement);
+          articleElement.appendChild(pElement);
 
-                var pElement = document.createElement("p");
-                let strongElement = document.createElement("strong");
-                strongElement.textContent = energyData.description.goal;
-                pElement.appendChild(strongElement);
-                articleElement.appendChild(pElement);
+          var pElement = document.createElement("p");
+          pElement.textContent = energyData.description.p1;
+          articleElement.appendChild(pElement);
 
-                var pElement = document.createElement("p");
-                pElement.textContent = energyData.description.p1;
-                articleElement.appendChild(pElement);
+          var pElement = document.createElement("p");
+          pElement.textContent = energyData.description.p2;
+          articleElement.appendChild(pElement);
 
-                var pElement = document.createElement("p");
-                pElement.textContent = energyData.description.p2;
-                articleElement.appendChild(pElement);
+          sectionElement.appendChild(articleElement);
 
-                sectionElement.appendChild(articleElement);
+          // ******************* Load Section 2 *******************
 
+          var sectionElement = document.createElement("section");
+          sectionElement.setAttribute("id", "sec2");
+          mainElement.appendChild(sectionElement);
 
+          // ******************* Load Subheading *******************
 
-                // ******************* Load Section 2 *******************
+          var h2Element = document.createElement("h2");
+          h2Element.textContent = energyData.subheading1;
+          sectionElement.appendChild(h2Element);
 
-                var sectionElement = document.createElement("section");
-                sectionElement.setAttribute("id","sec2");
-                mainElement.appendChild(sectionElement);
+          // ******************* Load Subheading div *******************
 
-                // ******************* Load Subheading *******************
+          var divElement = document.createElement("div");
 
-                var h2Element = document.createElement("h2");
-                h2Element.textContent = energyData.subheading1;
-                sectionElement.appendChild(h2Element);
-                
-                // ******************* Load Subheading div *******************
+          var h3Element = document.createElement("h3");
+          h3Element.textContent = energyData.event.heading;
+          divElement.appendChild(h3Element);
 
-                var divElement = document.createElement("div");
+          var pElement = document.createElement("p");
+          pElement.textContent = energyData.event.date;
+          divElement.appendChild(pElement);
 
-                var h3Element = document.createElement("h3");
-                h3Element.textContent = energyData.event.heading;
-                divElement.appendChild(h3Element);
+          sectionElement.appendChild(divElement);
 
-                var pElement = document.createElement("p");
-                pElement.textContent = energyData.event.date;
-                divElement.appendChild(pElement)
+          // ******************* Load image *******************
 
-                sectionElement.appendChild(divElement)
+          var imageElement = document.createElement("img");
+          imageElement.src = energyData.event.imageURL;
+          imageElement.alt = energyData.event.alt;
+          sectionElement.appendChild(imageElement);
 
-                // ******************* Load image *******************
-                
-                var imageElement = document.createElement("img")
-                imageElement.src = energyData.event.imageURL;
-                imageElement.alt = energyData.event.alt;
-                sectionElement.appendChild(imageElement);
+          // ******************* Load Paragraph *******************
 
-                // ******************* Load Paragraph *******************
+          var pElement = document.createElement("p");
+          pElement.textContent = energyData.event.description;
+          sectionElement.appendChild(pElement);
 
-                var pElement = document.createElement("p")
-                pElement.textContent = energyData.event.description;
-                sectionElement.appendChild(pElement);
+          // ******************* Load Section 3 *******************
 
+          var sectionElement = document.createElement("section");
+          sectionElement.setAttribute("id", "sec3");
+          mainElement.appendChild(sectionElement);
 
+          // ******************* Load Article *******************
 
+          var articleElement = document.createElement("article");
 
-                // ******************* Load Section 3 *******************
+          // ******************* Load Subheading *******************
 
-                var sectionElement = document.createElement("section");
-                sectionElement.setAttribute("id","sec3");
-                mainElement.appendChild(sectionElement);
+          var h2Element = document.createElement("h2");
+          h2Element.textContent = energyData.subheading2;
+          articleElement.appendChild(h2Element);
 
-                // ******************* Load Article *******************
+          // ******************* Load Subheading div *******************
 
-                var articleElement = document.createElement("article");
+          var divElement = document.createElement("div");
 
-                // ******************* Load Subheading *******************
+          var h3Element = document.createElement("h3");
+          h3Element.textContent = energyData.publication.name;
+          divElement.appendChild(h3Element);
 
-                var h2Element = document.createElement("h2");
-                h2Element.textContent = energyData.subheading2;
-                articleElement.appendChild(h2Element);
-                
-                // ******************* Load Subheading div *******************
+          var pElement = document.createElement("p");
+          pElement.textContent = energyData.publication.date;
+          divElement.appendChild(pElement);
 
-                var divElement = document.createElement("div");
+          articleElement.appendChild(divElement);
 
-                var h3Element = document.createElement("h3");
-                h3Element.textContent = energyData.publication.name;
-                divElement.appendChild(h3Element);
+          // ******************* Load Paragraph *******************
 
-                var pElement = document.createElement("p");
-                pElement.textContent = energyData.publication.date;
-                divElement.appendChild(pElement);
+          var pElement = document.createElement("p");
+          pElement.textContent = energyData.publication.description;
+          articleElement.appendChild(pElement);
 
-                articleElement.appendChild(divElement);
+          sectionElement.appendChild(articleElement);
 
-                // ******************* Load Paragraph *******************
+          // ******************* Load image *******************
 
-                var pElement = document.createElement("p")
-                pElement.textContent = energyData.publication.description;
-                articleElement.appendChild(pElement);
+          var articleElement = document.createElement("article");
 
-                sectionElement.appendChild(articleElement);
+          var imageElement = document.createElement("img");
+          imageElement.src = energyData.publication.imageURL;
+          imageElement.alt = energyData.publication.alt;
+          articleElement.appendChild(imageElement);
 
-                // ******************* Load image *******************
-                
-                var articleElement = document.createElement("article");
+          // ******************* Load Download *******************
 
-                var imageElement = document.createElement("img")
-                imageElement.src = energyData.publication.imageURL;
-                imageElement.alt = energyData.publication.alt;
-                articleElement.appendChild(imageElement);
+          var formElement = document.createElement("form");
+          formElement.method = "GET";
+          formElement.action = "/downloadEnergy";
 
-                // ******************* Load Download *******************
+          var inputElement = document.createElement("input");
+          inputElement.type = "submit";
+          inputElement.value = "Download";
+          formElement.appendChild(inputElement);
 
-                var formElement = document.createElement("form");
-                formElement.method = "GET";
-                formElement.action = "/downloadEnergy";
+          articleElement.appendChild(formElement);
 
-                var inputElement = document.createElement("input");
-                inputElement.type = "submit";
-                inputElement.value = "Download";
-                formElement.appendChild(inputElement);
-
-                articleElement.appendChild(formElement);
-
-                sectionElement.appendChild(articleElement);
-
-            }
+          sectionElement.appendChild(articleElement);
         }
-        )
-    }
-    )
+      });
+  });
 }
