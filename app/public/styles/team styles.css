@@ -42,6 +42,11 @@
     height:200px;
 }
 
+#button{
+    background-color: lightblue;
+    border-color: dodgerblue;
+}
+
 @media only screen and (max-width:1000px){
     #card{
         width:150px;
