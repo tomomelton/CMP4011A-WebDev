@@ -83,6 +83,12 @@
   min-height: 450px;
 }
 
+.download_button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 /* Mobile layout */
 @media (max-width: 1100px) {
   .goal_texts {
