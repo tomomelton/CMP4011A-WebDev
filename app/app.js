@@ -33,6 +33,17 @@ app.get("/downloadHunger", (req, res) => {
   });
 });
 
+//---------------------DOWNLOAD CONTRIBUTIONS---------------------
+app.get("/downloadTeam", (req, res) => {
+  res.download("public/downloads/Contributions.csv", (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Downloading");
+    }
+  });
+});
+
 // ******************* Newsletter Form Handling *******************
 app.post("/newsletter", (req, res) => {
   //process form data here
