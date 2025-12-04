@@ -145,6 +145,24 @@ if (document.querySelector('#teamMain'))
                     var pElement = document.createElement("p");
                     pElement.textContent = teamData.pages5;
                     sectionElement.appendChild(pElement);
+
+                    // ******************* Load Download *******************
+
+                    var superSection = document.createElement("section");
+                    superSection.setAttribute("id", "downloadContainer");
+                    mainElement.appendChild(superSection);
+
+                    var formElement = document.createElement("form");
+                    formElement.method = "GET";
+                    formElement.action = "/downloadTeam";
+                    superSection.appendChild(formElement);
+
+                    var inputElement = document.createElement("input");
+                    inputElement.type = "submit";
+                    inputElement.value = "Download Contribution Table";
+                    inputElement.setAttribute("id", "button");
+                    formElement.appendChild(inputElement);
+
                     
 
                     
