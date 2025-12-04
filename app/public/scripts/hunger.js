@@ -75,6 +75,18 @@ fetch(jsonFile)
                 <p>${text3Data.p2}</p>
             `;
     }
+
+    // Download button
+    if (document.querySelector(".download_button")) {
+      let downloadButton = document.querySelector(".download_button");
+      let downloadButtonData = data[0].downloadButton;
+
+      downloadButton.innerHTML = `
+                <form action="${downloadButtonData.url}" method="GET"">
+                  <input type="submit" value="Download" />
+                </form>
+            `;
+    }
   })
   .catch((err) => console.error("Error loading JSON:", err));
 
