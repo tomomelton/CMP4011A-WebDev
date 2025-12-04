@@ -133,3 +133,15 @@ h1 {
 nav li a:hover {
   background-color: #003632;
 }
+
+
+@media only screen and (max-width:700px)
+{
+  .title {
+    font-size: larger;
+  }
+
+  nav ul li a {
+    font-size: small;
+  }
+}
